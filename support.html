@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support — Berea</title>
+  <style>
+    :root {
+      --brand:        #3E5C9A;
+      --brand-light:  #3E5C9A22;
+      --brand-dark:   #2C4272;
+      --bg:           #F2F4F9;
+      --card:         #FEFEFF;
+      --text:         #1E2433;
+      --text-sec:     #4B5468;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--bg);
+      padding: 0 0 80px;
+    }
+
+    header {
+      background: linear-gradient(135deg, #3E5C9A 0%, #6B85C4 100%);
+      color: #fff;
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+
+    header .icon-circle {
+      width: 80px; height: 80px;
+      border-radius: 20px;
+      background: rgba(255,255,255,.2);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+      margin-bottom: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,.15);
+    }
+
+    header h1 { font-size: 28px; font-weight: 700; letter-spacing: -.4px; }
+    header p.subtitle { font-size: 14px; opacity: .85; margin-top: 6px; }
+
+    .container { max-width: 720px; margin: 0 auto; padding: 0 16px; }
+
+    .section {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 24px 24px 20px;
+      margin-top: 24px;
+      box-shadow: 0 1px 3px rgba(0,0,0,.05);
+    }
+
+    .section h2 {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .section h2 .icon { font-size: 20px; flex-shrink: 0; }
+    .section p { color: var(--text-sec); margin-bottom: 10px; }
+    .section p:last-child { margin-bottom: 0; }
+
+    .contact-card {
+      background: var(--brand-light);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-top: 16px;
+      text-align: center;
+    }
+
+    .contact-card .email-icon { font-size: 40px; display: block; margin-bottom: 12px; }
+    .contact-card p { margin: 0; font-size: 15px; color: var(--text-sec); }
+
+    .contact-card a.email-link {
+      display: inline-block;
+      margin-top: 12px;
+      background: var(--brand);
+      color: #fff;
+      font-weight: 600;
+      font-size: 16px;
+      padding: 12px 32px;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: opacity .2s;
+    }
+
+    .contact-card a.email-link:hover { opacity: .85; }
+
+    ul.faq-list { list-style: none; padding: 0; margin: 8px 0 0; }
+
+    ul.faq-list li {
+      padding: 12px 0;
+      border-bottom: 1px solid #E4E8F0;
+    }
+
+    ul.faq-list li:last-child { border-bottom: none; }
+
+    ul.faq-list li strong { color: var(--text); display: block; margin-bottom: 4px; }
+    ul.faq-list li span { color: var(--text-sec); font-size: 15px; }
+
+    footer { text-align: center; margin-top: 32px; font-size: 12px; color: #8E96A8; }
+    footer a { color: var(--brand-dark); text-decoration: none; }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg:       #12151E;
+        --card:     #1C2130;
+        --text:     #EAEDF5;
+        --text-sec: #A4ACC0;
+      }
+      header { background: linear-gradient(135deg, #2C4272 0%, #3E5C9A 100%); }
+      ul.faq-list li { border-color: #2A3040; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="icon-circle">📖</div>
+    <h1>Support</h1>
+    <p class="subtitle">Berea: Christian Devotional</p>
+  </header>
+
+  <div class="container">
+
+    <div class="section">
+      <h2><span class="icon">✉️</span> Contact Us</h2>
+      <p>
+        Have a question, found a bug, or need help with your subscription?
+        We're here to help.
+      </p>
+      <div class="contact-card">
+        <span class="email-icon">💬</span>
+        <p>Send us an email and we'll respond within 48 hours.</p>
+        <a class="email-link" href="mailto:sos@egdigital.com">sos@egdigital.com</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2><span class="icon">❓</span> Frequently Asked Questions</h2>
+      <ul class="faq-list">
+        <li>
+          <strong>How do I restore my subscription?</strong>
+          <span>Go to Settings &rarr; Berea Plus &rarr; Restore Purchases. Your subscription is linked to your Apple ID.</span>
+        </li>
+        <li>
+          <strong>How do I cancel my subscription?</strong>
+          <span>Open your iPhone's Settings &rarr; Apple ID &rarr; Subscriptions &rarr; Berea &rarr; Cancel. You'll keep access until the end of your billing period.</span>
+        </li>
+        <li>
+          <strong>What's the difference between Monthly and Lifetime?</strong>
+          <span>Monthly renews automatically at $5.99/month after a 3-day free trial. Lifetime is a one-time $39.99 purchase that unlocks every feature forever, with no recurring charge.</span>
+        </li>
+        <li>
+          <strong>How do I enable daily reminders?</strong>
+          <span>Go to Settings &rarr; Daily Reminder and toggle it on. You can choose your preferred time to receive your daily verse.</span>
+        </li>
+        <li>
+          <strong>Is my devotional data private?</strong>
+          <span>Absolutely. All your reflections and journal entries are stored locally on your device. We never upload your personal devotional content.</span>
+        </li>
+        <li>
+          <strong>How does the daily streak work?</strong>
+          <span>Open the app each day and complete your devotional (read the verse, reflect, or pray). Your streak grows every consecutive day you participate.</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2><span class="icon">📱</span> App Information</h2>
+      <p><strong>Berea: Christian Devotional</strong></p>
+      <p>Developed by EG Digital</p>
+      <p>Available on iOS</p>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 EG Digital &middot; Berea</p>
+      <p style="margin-top:6px;">
+        <a href="privacy.html">Privacy Policy</a>
+        &nbsp;&middot;&nbsp;
+        <a href="terms.html">Terms of Use</a>
+      </p>
+    </footer>
+
+  </div>
+
+</body>
+</html>

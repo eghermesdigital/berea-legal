@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Berea</title>
+  <style>
+    :root {
+      --brand:        #3E5C9A;
+      --brand-light:  #3E5C9A22;
+      --brand-dark:   #2C4272;
+      --bg:           #F2F4F9;
+      --card:         #FEFEFF;
+      --text:         #1E2433;
+      --text-sec:     #4B5468;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--bg);
+      padding: 0 0 80px;
+    }
+
+    header {
+      background: linear-gradient(135deg, #3E5C9A 0%, #6B85C4 100%);
+      color: #fff;
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+
+    header .icon-circle {
+      width: 80px; height: 80px;
+      border-radius: 20px;
+      background: rgba(255,255,255,.2);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+      margin-bottom: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,.15);
+    }
+
+    header h1 { font-size: 28px; font-weight: 700; letter-spacing: -.4px; }
+    header p.subtitle { font-size: 14px; opacity: .85; margin-top: 6px; }
+
+    .container { max-width: 720px; margin: 0 auto; padding: 0 16px; }
+
+    .effective-badge {
+      display: inline-block;
+      background: var(--brand-light);
+      color: var(--brand-dark);
+      font-size: 13px;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 20px;
+      margin: 28px 0 8px;
+    }
+
+    .section {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 24px 24px 20px;
+      margin-top: 16px;
+      box-shadow: 0 1px 3px rgba(0,0,0,.05);
+    }
+
+    .section h2 {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .section h2 .icon { font-size: 20px; flex-shrink: 0; }
+    .section p { color: var(--text-sec); margin-bottom: 10px; }
+    .section p:last-child { margin-bottom: 0; }
+
+    ul.data-list { list-style: none; padding: 0; margin: 8px 0 0; }
+
+    ul.data-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      padding: 6px 0;
+      border-bottom: 1px solid #E4E8F0;
+      font-size: 15px;
+      color: var(--text-sec);
+    }
+
+    ul.data-list li:last-child { border-bottom: none; }
+
+    ul.data-list li .dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--brand);
+      flex-shrink: 0;
+      margin-top: 7px;
+    }
+
+    .sdk-grid { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+
+    .sdk-chip {
+      background: var(--bg);
+      border-radius: 10px;
+      padding: 6px 14px;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    .sdk-chip a { color: var(--brand-dark); text-decoration: none; }
+
+    .contact-card {
+      background: var(--brand-light);
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-top: 12px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .contact-card .contact-icon { font-size: 28px; }
+    .contact-card p { margin: 0; font-size: 14px; color: var(--text-sec); }
+    .contact-card a { color: var(--brand-dark); font-weight: 600; text-decoration: none; }
+
+    footer { text-align: center; margin-top: 32px; font-size: 12px; color: #8E96A8; }
+    footer a { color: var(--brand-dark); text-decoration: none; }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg:       #12151E;
+        --card:     #1C2130;
+        --text:     #EAEDF5;
+        --text-sec: #A4ACC0;
+      }
+      header { background: linear-gradient(135deg, #2C4272 0%, #3E5C9A 100%); }
+      ul.data-list li { border-color: #2A3040; }
+      .sdk-chip { background: #2A3040; color: var(--text); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="icon-circle">📖</div>
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">Berea: Christian Devotional</p>
+  </header>
+
+  <div class="container">
+
+    <span class="effective-badge">Effective September 1, 2026</span>
+
+    <div class="section">
+      <h2><span class="icon">👋</span> Overview</h2>
+      <p>
+        <strong>Berea: Christian Devotional</strong> ("we", "our", or "us") is developed by
+        <strong>EG Digital</strong>. This Privacy Policy explains how we
+        collect, use, and protect information when you use our app.
+      </p>
+      <p>
+        The short version: <strong>Berea collects nothing.</strong> The app makes no
+        network requests of its own, contains no analytics, no advertising and no
+        third-party SDKs, and does not ask you to create an account. Everything you
+        write stays on your device.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2><span class="icon">📦</span> Information We Collect</h2>
+      <p>
+        <strong>None.</strong> Berea has no account, no login and no server of its
+        own. It does not collect usage analytics, crash reports, advertising
+        identifiers or a notification token, and it does not track you across apps
+        or websites.
+      </p>
+      <p style="margin-top:12px;">Two things do exist, and neither is collected by us:</p>
+      <ul class="data-list">
+        <li><span class="dot"></span>
+          <span><strong>What you write</strong> — reflections, prayer intentions and
+          notebook entries live on your own device. If you have iCloud turned on, they
+          are also saved to <strong>your own private iCloud account</strong>, so you do
+          not lose them when you change phones. That copy belongs to you: it is
+          protected by your Apple Account, we cannot read, list or recover it, and you
+          can turn it off in the app's Settings or in iOS Settings &rsaquo; iCloud.</span>
+        </li>
+        <li><span class="dot"></span>
+          <span><strong>Purchases</strong> — if you buy Berea Plus, the transaction is
+          handled entirely by Apple. We never see or store your payment details, and
+          we receive no personal data from the purchase.</span>
+        </li>
+      </ul>
+      <p style="margin-top:12px;">
+        Daily reminders are <strong>local notifications</strong>, scheduled by the app on
+        your device. Nothing is sent to a server, and no push token exists.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2><span class="icon">⚙️</span> How We Use Your Information</h2>
+      <p>
+        We have no information to use. We do not profile you, we do not show
+        behavioural advertising, and there is nothing for us to sell to anyone.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2><span class="icon">🔗</span> Third-Party Services</h2>
+      <p>
+        <strong>None.</strong> Berea bundles no third-party SDK — no analytics,
+        no attribution, no crash reporting, no advertising. Purchases go through
+        Apple's own StoreKit, and iCloud backup uses Apple's CloudKit into your
+        private database; both are Apple services governed by
+        <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's Privacy Policy</a>.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2><span class="icon">🗓️</span> Data Retention</h2>
+      <p>
+        We hold no data, so there is nothing for us to retain or delete on your
+        behalf. What you write stays on your device — deleting the app removes it.
+        If iCloud backup is on, the copy in your private iCloud account stays under
+        your control and disappears when you delete it or turn the backup off.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2><span class="icon">👶</span> Children's Privacy</h2>
+      <p>
+        Berea is not directed to children under the age of 4. We do not
+        knowingly collect personal information from children. If you believe a
+        child has provided us personal information, please contact us and we
+        will delete it promptly.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2><span class="icon">⚖️</span> Your Rights</h2>
+      <p>
+        Laws such as the GDPR and the LGPD give you rights over personal data a
+        company holds about you — access, correction, deletion, withdrawal of
+        consent, and complaint to a supervisory authority. In our case there is
+        nothing to exercise them against: we hold no personal data about you.
+      </p>
+      <p style="margin-top:12px;">
+        What you wrote in the app is yours and under your control — delete an entry
+        in the app, or delete the app, and it is gone; the iCloud copy, if you
+        enabled it, lives in your own Apple Account and is removed the same way.
+        If you have any question about this, write to
+        <a href="mailto:sos@egdigital.com">sos@egdigital.com</a> and we will
+        answer within 30 days.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2><span class="icon">🔒</span> Security</h2>
+      <p>
+        The safest data is the data that is never collected, and that is the design
+        here: Berea sends nothing to us, so there is no database of ours to breach.
+        What stays on your device is protected by iOS itself, and the optional iCloud
+        copy is protected by your Apple Account.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2><span class="icon">📝</span> Changes to This Policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time. When we do, we will
+        update the "Effective" date at the top of this page.
+      </p>
+      <p>
+        Continued use of Berea after changes are posted constitutes your
+        acceptance of the updated policy.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2><span class="icon">✉️</span> Contact Us</h2>
+      <p>If you have any questions about this Privacy Policy:</p>
+      <div class="contact-card">
+        <span class="contact-icon">💬</span>
+        <div>
+          <p><strong>EG Digital</strong></p>
+          <p><a href="mailto:sos@egdigital.com">sos@egdigital.com</a></p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 EG Digital &middot; Berea</p>
+      <p style="margin-top:6px;">
+        <a href="terms.html">Terms of Use</a>
+        &nbsp;&middot;&nbsp;
+        <a href="mailto:sos@egdigital.com">Contact</a>
+      </p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
